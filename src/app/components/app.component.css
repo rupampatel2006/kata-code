@@ -1,0 +1,38 @@
+
+.sidebar{
+  background: #f8f8f8;
+  color: #666;
+  width: 250px;
+  min-height: 300px;
+  padding: 10px 10px 10px 10px;
+}
+
+.heading {
+  padding: 0 0 20px 10px;
+}
+
+.dot1 {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  background-color: #660066;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 25px;
+  margin: 5px;
+  width: 25px;
+  background-color: #000099;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot3 {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  background-color: #009933;
+  border-radius: 50%;
+  display: inline-block;
+}

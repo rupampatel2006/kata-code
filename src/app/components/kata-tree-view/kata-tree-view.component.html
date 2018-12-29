@@ -1,0 +1,18 @@
+<ul class="list">
+
+  <li *ngFor="let item of data;index as i">
+
+    <span (click)="isCollapsed[i] = !isCollapsed[i]">
+      <span style="" *ngIf="item.children && item.children.length" [ngClass]="{'node-opened': isCollapsed[i]}">></span>
+      <span *ngIf="!item.children">&nbsp;</span>
+      <span class="list-title">{{item.name}}</span>
+    </span>
+
+    <app-kata-tree-view [collapse]="!isCollapsed[i]" *ngIf="item.children && item.children.length > 0"
+                        [data]="item.children">
+    </app-kata-tree-view>
+
+  </li>
+
+</ul>
+

@@ -1,0 +1,31 @@
+
+.list {
+  list-style-type: none;
+  padding: 0px 0px 0 5px;
+  font-size: 12px;
+  list-style-position: outside;
+  display: inline-block;
+}
+
+.list li{
+  margin-top: 5px;
+  cursor: pointer;
+}
+.list {
+  list-style-type: none;
+}
+.list .parent {
+  font-weight: bold;
+  cursor: pointer;
+}
+.list span {
+  display: inline-block;
+}
+.node-opened {
+  transform: rotate(90deg);
+}
+
+
+.list-title {
+  padding-left: 10px;
+}
