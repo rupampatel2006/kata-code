@@ -10,7 +10,6 @@ export class KataTreeViewComponent implements OnInit {
   @Input('data') data: any[];
   isCollapsed = [];
 
-  public collapseAttr: string = 'isCollapsed';
   constructor() { }
 
   ngOnInit() {
