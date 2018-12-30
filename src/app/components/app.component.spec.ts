@@ -1,5 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from './app.component';
 import {KataTreeViewComponent} from "./kata-tree-view/kata-tree-view.component";
 import {FormsModule} from "@angular/forms";
 import {HttpClientTestingModule} from "@angular/common/http/testing";
@@ -22,11 +22,13 @@ describe('AppComponent', () => {
       schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
   }));
+
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
+
   it('should render title in a h6 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();

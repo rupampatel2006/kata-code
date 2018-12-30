@@ -14,10 +14,6 @@
 .list {
   list-style-type: none;
 }
-.list .parent {
-  font-weight: bold;
-  cursor: pointer;
-}
 .list span {
   display: inline-block;
 }

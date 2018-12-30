@@ -1,5 +1,5 @@
-import { TestBed, inject } from '@angular/core/testing';
-import { KataServiceService } from './kata-service.service';
+import {TestBed, inject} from '@angular/core/testing';
+import {KataServiceService} from './kata-service.service';
 import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('KataServiceService', () => {
@@ -63,7 +63,7 @@ describe('KataServiceService', () => {
       "d0fe8b",
       "0894c5"
     ]
-  }
+  };
 
 
   beforeEach(() => {
@@ -78,8 +78,14 @@ describe('KataServiceService', () => {
     expect(service).toBeTruthy();
   }));
 
-  it('should be created11', inject([KataServiceService], (service: KataServiceService) => {
-    expect(service.getVariablePosition(orders.graph, '0f6ce0')).toEqual('2.1.3');
-  }));
+  it('getVariablePosition: should return position of 0f6ce0 as 2.1.3',
+    inject([KataServiceService], (service: KataServiceService) => {
+      expect(service.getVariablePosition(orders.graph, '0f6ce0')).toEqual('2.1.3');
+    }));
+
+  it('findVariableFromPosition: should return position of 2.1.3 as 0f6ce0 ',
+    inject([KataServiceService], (service: KataServiceService) => {
+      expect(service.findVariableFromPosition(orders.graph, '2.1.3')).toEqual('0f6ce0');
+    }));
 
 });
